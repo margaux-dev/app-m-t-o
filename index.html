@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Meteo</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+ 
+    <div class="card" id="card">
+    <h1>Météo</h1>
+    <form id="weather-form">
+        <input type="text" id="city-input" placeholder="Entrez le nom de la ville">
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <div id="result" class="result">
+<h2 id="city-name">--</h2>
+<p class="temperature"><span id="temperature">--</span>°C</p>
+    </div>
+    <p id="error-msg" class="error-hidden">Ville non trouvée.</p>
+</div>
+    
+</body>
+</html>

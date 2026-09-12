@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #a6d7de;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.card {
+  background-color: #71bbd2;
+  padding: 2rem;
+  border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: background-color 0.4s ease;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;    
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-hidden {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* theme de temperature */
+.card.cold {
+    background-color: #5059ad;
+}
+.card.warm {
+    background-color: #c46f62;
+}  
